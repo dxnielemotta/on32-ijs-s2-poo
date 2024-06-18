@@ -12,6 +12,7 @@ export class ProdutoVariante extends Produto {
 
     //isso é um override = sobrescrita (polimorfismo)
     public get descricao():string {
+        console.log('classe filha')
         return `O produto ${this.nome} , com a cor ${this.cor}
         categorias ${this.categorias.join(', ')}
         ${this._descricao}`

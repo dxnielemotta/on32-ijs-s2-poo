@@ -19,7 +19,9 @@ import { ProdutoInterface } from "./interfaces/produtos.interface";
 export class Produto implements ProdutoInterface {
     protected estoque: number = 0
     public tipo:ProdutoTipoEnum = ProdutoTipoEnum.FISICO
+
     public get descricao(): string {
+        console.log('classe mae')
         return this._descricao
     }
 
